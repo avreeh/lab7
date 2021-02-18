@@ -34,6 +34,9 @@ ga('send', 'pageview');
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
 		</div>
 
+		{{#if viewAlt}}
+		Min! <button class="likeBtn">Like</button>
+		{{else}}
 		<h4>Projects</h4>
 		{{#each projects}}
 			<div class="project" id="{{id}}">
@@ -47,7 +50,7 @@ ga('send', 'pageview');
 				</div>
 			</div>
 		{{/each}}
-
+		{{/if}}
 
 </body>
 </html>
